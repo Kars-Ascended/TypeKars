@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Redirect root URL to /home
+RewriteRule ^$ /home [L,R=302]
+
+# Friendly URLs
+RewriteRule ^home$ /pages/index.php [L]
+
+# Hide 'pages' from all other URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /pages/$1 [L]
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
