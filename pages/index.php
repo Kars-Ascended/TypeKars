@@ -25,5 +25,9 @@
         <h2>Why does this exist?</h2>
         <p>Info on type soul is very outdated, nonexistant, or just sucks to find. im making this site so eliminate all those problems. here is a <a href="https://docs.google.com/spreadsheets/d/1-pwAeNEOp6lCU6OaSeaXHCsdBjJ4cuOmOeMi5eWncak/edit?usp=sharing">google sheet</a> where anyone can add comments for me to edit in. This site WILL suck, it will be alot better once more things are added by helpful players like you!</p>
     </main-element>
+
+    <main-element>
+        <h2>Currently this site is USELESS, it has been in development for less than a hour. its more of just a testing place while i work on adding all the tables in the backend</h2>
+    </main-element>
 </body>
 </html>

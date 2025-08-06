@@ -107,5 +107,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Sticky Footer -->
 <footer style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;text-align:center;padding:8px 0;z-index:100;">
-    <small>Very new, very bad, join the <a href="https://discord.gg/yfuEbZ44H7">discord</a> and drop any suggestions you might have</small>
+    <small>Very new, very bad, join the <a href="https://discord.gg/yfuEbZ44H7" target="_blank">discord</a> and drop any suggestions you might have</small>
 </footer>

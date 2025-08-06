@@ -2,28 +2,44 @@
 <html lang="en">
 <head>
     <?php include '../backend/meta-include.php'; ?>
+    <link rel="stylesheet" href="../css/table.css">
     <title>Tables - Type://Kars</title>
     <style>
-        @media only screen and (max-width: 768px) {
-            main-element.welcome .left{
-                display: none !important;
+        .contents {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contents div {
+            width: calc(20% - 8px); /* 20% for 5 items per row, minus gap space */
+            aspect-ratio: 1 / 1;
+            margin-bottom: 10px;
+
+            text-decoration: none;
+            text-align: center;
+
+            border: 1px solid white; border-radius: 2em;
+        }
+
+        .contents div a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Make it responsive */
+        @media (max-width: 768px) {
+            .contents div {
+                width: calc(50% - 5px); /* 2 items per row on tablets */
             }
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #242424ff;
-        }
-        .table-container {
-            margin: 20px;
+
+        @media (max-width: 480px) {
+            .contents div {
+                width: 100%; /* 1 item per row on mobile */
+            }
         }
     </style>
 </head>
@@ -34,11 +50,18 @@
 
     <main-element>
         <h2>Contents</h2>
-        <ul>
-            <li><a href="#elements">Elements</a></li>
-            <li><a href="#items">Items</a></li>
-            <li><a href="#codes">Codes</a></li>
-        </ul>
+        <div class="contents">
+            <div><a href="#elements">Elements</a></div>
+            <div><a href="#items">Items</a></div>
+            <div><a href="#codes">Codes</a></div>
+            <div><a href="#">BLANK</a></div>
+            <div><a href="#">BLANK</a></div>
+            <div><a href="#">BLANK</a></div>
+            <div><a href="#">BLANK</a></div>
+            <div><a href="#">BLANK</a></div>
+            <div><a href="#">BLANK</a></div>
+
+        </div>
     </main-element>
     <div class="table-container">
         <?php
